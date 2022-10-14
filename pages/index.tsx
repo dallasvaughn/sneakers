@@ -12,7 +12,7 @@ import { CartProvider } from '../context/cartContext';
 
 const Home: NextPage = () => {
   const [displayMenu, setDisplayMenu] = useState(false);
-  const [displayLightbox, setDisplayLightbox] = useState(true);
+  const [displayLightbox, setDisplayLightbox] = useState(false);
 
   const toggleMenu = () => {
     setDisplayMenu(!displayMenu);
