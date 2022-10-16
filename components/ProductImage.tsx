@@ -34,6 +34,7 @@ const ProductImage = ({ toggleLightbox }: Props) => {
         {thumbnails.map((image, i) => {
           return (
             <span
+              key={i}
               style={{
                 border: index === i ? '2px solid hsl(26, 100%, 55%)' : 'none',
                 borderRadius: '12px',

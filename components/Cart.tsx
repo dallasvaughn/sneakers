@@ -34,8 +34,10 @@ const Cart = () => {
             <div className="flex flex-col text-[14px] mr-auto ml-4 text-dark-gray-blue">
               <span className="mb-1 ">Autumn Limited Edition...</span>
               <span>
-                $125.00 x 3{' '}
-                <span className="font-bold text-dark-blue ml-1">$375.00</span>
+                $125.00 x {state.count}{' '}
+                <span className="font-bold text-dark-blue ml-1">
+                  ${125 * state.count}.00
+                </span>
               </span>
             </div>
             <span
